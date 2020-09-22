@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Google Weather Replication</title>
   </head>
   <body>
@@ -17,10 +18,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>London</h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Monday 20:00</li>
-              <li>Clear</li>
+              <li id="description"></li>
             </ul>
           </div>
           <div class="row">
@@ -32,7 +33,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong>12</strong>
+                  <strong id="temperature"></strong>
                   <span class="units">°C | <a href="#">°F</a></span>
                 </div>
               </div>
@@ -57,6 +58,6 @@
         </small>
       </div>
     </div>
-    <script src="src/index.js /"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
